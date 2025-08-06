@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #151515;
+}
+nav{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+.logo{
+    flex: 1;
+    font-size: 45px; 
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: red;
+    text-align: center;
+}
+.section{
+    cursor: pointer;
+    flex: 5;
+    display: flex;
+    list-style: none; 
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Roboto", serif;
+    
+}
+.section li{
+    cursor: pointer;
+   margin-left: 50px;
+}
+.home{
+    font-weight: bold;
+}
+.menu{
+    display: none;
+    color: #fff;
+}
+.profile{
+    cursor: pointer;
+    flex: 1; 
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    margin-left: 60px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.profile img{
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   object-fit: cover; 
+}
+
+.content-container{
+    width: 100%;
+    height: calc(100vh);
+}
+.container{
+    width: 100%;
+    height: 82vh;
+    background-image: linear-gradient(to bottom, rgba(231, 225, 225, 0.1), #151515), url('/content/nun3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+.container img{
+    margin-top: 280px;
+    margin-left: 60px;
+    width: 530px;
+}
+.para{
+    font-size: 25px;
+    color: #fff;
+   margin-top: 30px;
+    margin-left: 60px;
+}
+.container-btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+   background-color: #fff;
+   font-size: 20px;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   font-weight: bold;
+}
+.container-btn:hover{
+    background-color: gray;
+}
+.detail{
+    color: red;
+    
+}
+.main{
+    background-color: #151515;
+    height: calc(100vh -50px);
+    color: white;
+    
+}
+.movie-list-container{
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: 60px;
+    height: 500px;
+    overflow: hidden;
+
+}
+.movie-wrapper{
+   position: relative;  
+}
+.movie-list{
+    display: flex;
+    height: 450px;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    
+}
+.movie-list-item{
+    margin-right: 30px;
+    text-align: left;  
+}
+.movie-list-item-img{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: all 1s ease-in-out;
+}
+.movie-list-item-img:hover{
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    transform: scale(1.1);
+    margin: 0 30px;
+    display: 1;
+
+}
+.movie-list-item-img:hover .movie-list-item-disc{
+   display: contents;
+}
+.movie-list-item-btn{
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: red;
+    color: #fff;
+    margin-top: 7px;
+}
+.videos{
+    width: 500px;
+    height: 500px;
+    padding: 5px;
+    background-color: burlywood;
+}
+.movie-list-title{
+    color: white;
+    
+}
+.movie-list-item-title{
+    font-size: 25px;
+   
+}
+.movie-list-item-disc{
+    text-align: left;
+    font-size: 17px;
+    background-color: rgb(42, 41, 41);
+    color: #fff;
+    display: none;
+    margin-top: 5px;
+}
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
+
+.footer{
+    cursor: pointer;
+    background-color: #1a1a1a;
+    height: 300px;
+    width: 94%;
+    margin: 60px;
+    margin-top: 40px;
+    padding: 20px;
+}
+.social-media {
+    display: flex;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.social-media i{
+    margin-left: 30px;
+}
+
+.lower-section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.lower-section p{
+    margin-top: 10px;
+}
+.service{
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+
+@media only screen and (max-width: 1069px){
+    .section{
+        display: none;
+    }
+    .menu{
+        display: block;
+        color: #fff;
+    }
+    
+}
